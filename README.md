@@ -1,4 +1,4 @@
-# qsticker-website
+# qsticker_website
 
 ## Project setup
 ```
