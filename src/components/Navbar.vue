@@ -1,10 +1,9 @@
 <template>
   <div class="navbar">
-    <div class="navbar-brand">
-      <!-- <router-link to="/">
-        <i class="far fa-comment fa-flip-horizontal" />
-        互動貼圖
-      </router-link> -->
+    <div class="navbar-brand" data-aos="fade" data-aos-anchor="#brand-anchor" data-aos-anchor-placement="center-top" data-aos-duration="200">
+      <router-link to="/">
+        學力科技
+      </router-link>
     </div>
 
     <div id="nav">
@@ -14,7 +13,14 @@
       <router-link to="/about">
         關於
       </router-link> |
-      <a href="https://qsticker.github.io/#/login">會員登入</a>
+      <router-link to="/about">
+        會員登入
+      </router-link> |
+      <a href="https://qsticker.github.io/#/login">互動貼圖後台</a> |
+      <a href="https://qsticker.github.io/#/login">知識地圖後台</a> |
+      <router-link to="/about">
+        圖表分析
+      </router-link>
     </div>
   </div>
 </template>
@@ -44,6 +50,10 @@ export default Vue.extend({
     color: #2c3e50;
 
     &.router-link-exact-active {
+      color: #42b983;
+    }
+
+    &:hover{
       color: #42b983;
     }
   }
