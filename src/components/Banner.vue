@@ -3,7 +3,7 @@
     <div class="background">
       <div class="content">
         <div class="left">
-          <div class="icon">
+          <div class="icon animate__animated animate__bounce">
             <i class="far fa-comment fa-flip-horizontal" />
           </div>
           <div class="title">
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="right">
-          <button class="btn btn-primary">
+          <button class="btn">
             立即加入
           </button>
         </div>
@@ -35,8 +35,6 @@ export default Vue.extend({
   width: 100%;
   height: 550px;
   max-height: 100vh;
-
-  // background-image: linear-gradient(0.3turn, #3f87a6, #ebf8e1, #42b983);
   background-image: url('../assets/home_banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -64,13 +62,6 @@ export default Vue.extend({
         text-shadow: 2px 2px 2px #818d92;
         .icon{
           padding-right: 10px;
-          i{
-            animation-name: rotateIcon;
-            animation-duration: 0.2s;
-            animation-fill-mode: backwards;
-            animation-iteration-count: 5;
-            animation-timing-function: linear;
-          }
         }
         .title{
           font-weight: 600;
@@ -108,15 +99,6 @@ export default Vue.extend({
         }
       }
     }
-  }
-}
-
-@keyframes rotateIcon{
-  0% {
-    transform: rotate(360deg), scale(2);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 

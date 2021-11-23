@@ -1,16 +1,33 @@
 <template>
   <div class="home">
-    <Banner />
+    <Banner class="mb-5" />
+
+    <WelcomeArea />
+
+    <IntroduceArea class="m-5" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Banner from '@/components/Banner.vue'; // @ is an alias to /src
+import WelcomeArea from '@/components/WelcomeArea.vue';
+import IntroduceArea from '@/components/IntroduceArea.vue';
 
 export default Vue.extend({
   components: {
     Banner,
+    WelcomeArea,
+    IntroduceArea,
+  },
+  data() {
+    return {
+    };
+  },
+  methods: {
   },
 });
 </script>
+
+<style lang="scss" scoped>
+</style>
