@@ -35,12 +35,13 @@ export default Vue.extend({
   width: 100%;
   height: 550px;
   max-height: 100vh;
-  background-image: url('../assets/home_banner.jpg');
+  // background-image: url('../assets/home_banner.jpg');
+   background-image: linear-gradient(0.3turn, #2f2f30, #16220d, #034628);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   .background{
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     position: absolute;
     justify-content: center;
@@ -51,7 +52,7 @@ export default Vue.extend({
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(255, 255, 255, 0.6);
+      // background-color: rgba(255, 255, 255, 0.6);
       width: 100%;
       padding: 30px;
       .left{
@@ -59,7 +60,8 @@ export default Vue.extend({
         width: 50%;
         justify-content: center;
         font-size: 3rem;
-        text-shadow: 2px 2px 2px #818d92;
+        color: #fff;
+        // text-shadow: 2px 2px 2px #818d92;
         .icon{
           padding-right: 10px;
         }

@@ -2,7 +2,7 @@
   <div class="introduce-area">
     <div class="container">
       <div class="pic" data-aos="fade-up" data-aos-duration="1000" />
-      <div class="txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+      <div class="txt" data-aos="fade-down" data-aos-duration="1500">
         <h2>一起享受被綠色環繞的療癒</h2>
         <p>當你需要的時候，在自己最喜歡的角落，也有可以療癒自己的綠色。</p>
         <button class="btn btn-primary">
