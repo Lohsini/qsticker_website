@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <div class="navbar-brand" data-aos="fade" data-aos-anchor="#brand-anchor" data-aos-anchor-placement="center-top" data-aos-duration="200">
+    <div class="navbar-brand">
       <router-link to="/">
         學力科技
       </router-link>

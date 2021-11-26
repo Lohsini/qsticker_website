@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Banner id="brand-anchor" class="mb-5" />
+    <Banner class="mb-5" />
 
     <WelcomeArea />
 

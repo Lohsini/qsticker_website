@@ -5,7 +5,7 @@
       <div class="txt" data-aos="fade-down" data-aos-duration="1500">
         <h2>一起享受被綠色環繞的療癒</h2>
         <p>當你需要的時候，在自己最喜歡的角落，也有可以療癒自己的綠色。</p>
-        <button class="btn btn-primary">
+        <button class="btn">
           看更多
         </button>
       </div>
@@ -50,6 +50,24 @@ export default Vue.extend({
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      button{
+        font-size: 1rem;
+        font-weight: 100;
+        background-color: #1d4b11;
+        color: #fff;
+        border-radius: 2px;
+        padding: 5px 20px;
+        border: none;
+        transition: all 0.2s;
+        animation-name: show;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.9;
+          transition: all 0.2s;
+        }
+      }
     }
   }
 }

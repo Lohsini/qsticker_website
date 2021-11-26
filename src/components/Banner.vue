@@ -3,14 +3,17 @@
     <div class="background">
       <div class="content">
         <div class="left">
-          <div class="icon animate__animated animate__bounce">
+          <div class="icon title">
             <i class="far fa-comment fa-flip-horizontal" />
           </div>
           <div class="title">
             互動貼圖
-            <div class="subtitle">
-              QSticker
-            </div>
+          </div>
+          <div class="title mx-3">
+            X
+          </div>
+          <div class="title">
+            學力診斷分析
           </div>
         </div>
         <div class="right">
@@ -33,10 +36,10 @@ export default Vue.extend({
 <style scoped lang="scss">
 .banner{
   width: 100%;
-  height: 550px;
+  height: 500px;
   max-height: 100vh;
   // background-image: url('../assets/home_banner.jpg');
-   background-image: linear-gradient(0.3turn, #2f2f30, #16220d, #034628);
+   background-image: linear-gradient(0.2turn, #2f2f30, #1e3012, #034628);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -57,7 +60,7 @@ export default Vue.extend({
       padding: 30px;
       .left{
         display: flex;
-        width: 50%;
+        width: 60%;
         justify-content: center;
         font-size: 3rem;
         color: #fff;
@@ -70,11 +73,6 @@ export default Vue.extend({
           animation-name: showTitle;
           animation-duration: 1.2s;
           animation-timing-function: ease-in-out;
-          .subtitle{
-            font-size: 2rem;
-            text-align: left;
-            padding-left: 10px;
-          }
         }
       }
       .right{
@@ -84,18 +82,16 @@ export default Vue.extend({
           font-weight: 600;
           background-color: #3f87a6;
           color: #fff;
-          border-radius: 50px;
+          border-radius: 2px;
           padding: 5px 20px;
           border: none;
           transition: all 0.2s;
-          box-shadow: 2px 2px 2px #20576e;
-          font-weight: 600;
           animation-name: show;
           animation-duration: 1.2s;
           animation-timing-function: ease-in-out;
           &:hover{
             cursor: pointer;
-            transform: translate(0px, 2px);
+            opacity: 0.9;
             transition: all 0.2s;
           }
         }
