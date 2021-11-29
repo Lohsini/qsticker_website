@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <Banner class="mb-5" />
+    <Banner style="margin-bottom: 100px" />
 
-    <WelcomeArea />
+    <WelcomeArea style="margin: 50px 0" />
 
-    <IntroduceArea class="m-5" />
+    <IntroduceArea style="margin-bottom: 100px" />
 
-    <CardsArea style="margin-top: 100px" class="mb-5" />
+    <CardsArea style="margin: 100px 0" />
+
+    <ContactArea />
 
     <Footer />
   </div>
@@ -18,6 +20,7 @@ import Banner from '@/components/Banner.vue'; // @ is an alias to /src
 import WelcomeArea from '@/components/WelcomeArea.vue';
 import IntroduceArea from '@/components/IntroduceArea.vue';
 import CardsArea from '@/components/CardsArea.vue';
+import ContactArea from '@/components/ContactArea.vue';
 import Footer from '@/components/Footer.vue';
 
 export default Vue.extend({
@@ -26,6 +29,7 @@ export default Vue.extend({
     WelcomeArea,
     IntroduceArea,
     CardsArea,
+    ContactArea,
     Footer,
   },
   data() {
