@@ -2,7 +2,7 @@
   <div class="cards-area">
     <div class="title">
       <h1 class="mb-4">
-        This is H1 title.
+        互動體驗區
       </h1>
     </div>
     <div class="container">
@@ -10,6 +10,7 @@
            data-aos="flip-left"
            data-aos-duration="1500"
            :data-aos-delay="key*200"
+           @click.prevent="enterExperience(item.title)"
       >
         <div class="image">
           <img :src="item.imgURL" :alt="item.alt">
@@ -18,6 +19,7 @@
           <p class="title">
             {{ item.title }}
           </p>
+          <p>題目簡介：</p>
           <p class="txt">
             {{ item.txt }}
           </p>
@@ -29,9 +31,9 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import cards1 from '@/assets/card1.jpg';
-import cards2 from '@/assets/card2.jpg';
-import cards3 from '@/assets/card3.jpg';
+import card1 from '@/assets/card1.jpg';
+import card2 from '@/assets/card2.jpg';
+import card3 from '@/assets/card3.jpg';
 
 export default Vue.extend({
   components: {
@@ -40,25 +42,30 @@ export default Vue.extend({
     return {
       contents: [
         {
-          imgURL: cards1,
-          alt: 'cards1.jpg',
-          title: '1. 互動貼圖',
-          txt: '快速蒐集資料',
+          imgURL: card1,
+          alt: 'card1.jpg',
+          title: '《滿意度調查》',
+          txt: '適用於活動結束後收集資料',
         },
         {
-          imgURL: cards2,
-          alt: 'cards2.jpg',
-          title: '2. 學力診斷分析',
-          txt: '產生知識地圖',
+          imgURL: card2,
+          alt: 'card2.jpg',
+          title: '《認識動物》',
+          txt: '簡單易懂的圖卡設計，適用於幼兒及低年級學生',
         },
         {
-          imgURL: cards3,
-          alt: 'cards3.jpg',
-          title: '3. 完成',
-          txt: '獲得成效',
+          imgURL: card3,
+          alt: 'card3.jpg',
+          title: '《Indonesia Demo》',
+          txt: '專門用印尼文製作的題目，此測驗擁有完整體驗流程，適用於補習班',
         },
       ],
     };
+  },
+  methods: {
+    enterExperience(id:string) {
+      console.log(`enterExperience${id}`);
+    },
   },
 });
 </script>
@@ -100,6 +107,10 @@ export default Vue.extend({
     }
     .block + .block{
       margin-left: 50px;
+    }
+    .block:hover{
+      cursor: pointer;
+      border: #fc8585 1px solid;
     }
   }
 }

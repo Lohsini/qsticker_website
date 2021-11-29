@@ -1,10 +1,38 @@
 <template>
   <div class="introduce-area">
     <div class="container">
-      <div class="pic" data-aos="fade-up" data-aos-duration="1000" />
+      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+        <img :src="card1" :alt="card1">
+      </div>
       <div class="txt" data-aos="fade-down" data-aos-duration="1500">
-        <h2>一起享受被綠色環繞的療癒</h2>
-        <p>當你需要的時候，在自己最喜歡的角落，也有可以療癒自己的綠色。</p>
+        <h2>1. 互動貼圖</h2>
+        <p>快速蒐集資料</p>
+        <button class="btn">
+          看更多
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="txt" data-aos="fade-down" data-aos-duration="1500">
+        <h2>2. 學力診斷分析</h2>
+        <p>產生知識地圖</p>
+        <button class="btn">
+          看更多
+        </button>
+      </div>
+      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+        <img :src="card2" :alt="card2">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+        <img :src="card3" :alt="card3">
+      </div>
+      <div class="txt" data-aos="fade-down" data-aos-duration="1500">
+        <h2>3. 完成</h2>
+        <p>獲得成效</p>
         <button class="btn">
           看更多
         </button>
@@ -15,8 +43,18 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import card1 from '@/assets/card1.jpg';
+import card2 from '@/assets/card2.jpg';
+import card3 from '@/assets/card3.jpg';
 
 export default Vue.extend({
+  data() {
+    return {
+      card1,
+      card2,
+      card3,
+    };
+  },
 });
 </script>
 
@@ -30,14 +68,15 @@ export default Vue.extend({
       width: 55%;
       height: 300px;
       flex-shrink: 0;
-      background-image: url('../assets/home_picture.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       margin-top: 100px;
       margin-right: -5%;
       z-index: 1;
       border-radius: 2px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .txt{
       width: 50%;
