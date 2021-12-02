@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import AOS from 'aos';
 import animated from 'animate.css';
+import VueClipboard from 'vue-clipboard2';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -9,6 +10,7 @@ import 'aos/dist/aos.css';
 
 Vue.use(AOS);
 Vue.use(animated);
+Vue.use(VueClipboard);
 
 Vue.config.productionTip = false;
 
