@@ -6,7 +6,9 @@
 
     <IntroduceArea style="margin-bottom: 100px" />
 
-    <CardsArea style="margin: 100px 0" />
+    <FilmArea style="margin-bottom: 100px" />
+
+    <ExperienceArea style="margin: 50px 0" />
 
     <ContactArea />
 
@@ -19,7 +21,8 @@ import Vue from 'vue';
 import Banner from '@/components/Banner.vue'; // @ is an alias to /src
 import WelcomeArea from '@/components/WelcomeArea.vue';
 import IntroduceArea from '@/components/IntroduceArea.vue';
-import CardsArea from '@/components/CardsArea.vue';
+import FilmArea from '@/components/FilmArea.vue';
+import ExperienceArea from '@/components/ExperienceArea.vue';
 import ContactArea from '@/components/ContactArea.vue';
 import Footer from '@/components/Footer.vue';
 
@@ -28,7 +31,8 @@ export default Vue.extend({
     Banner,
     WelcomeArea,
     IntroduceArea,
-    CardsArea,
+    FilmArea,
+    ExperienceArea,
     ContactArea,
     Footer,
   },

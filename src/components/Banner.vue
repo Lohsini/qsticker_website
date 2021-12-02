@@ -39,6 +39,8 @@ export default Vue.extend({
   height: 500px;
   max-height: 100vh;
   // background-image: url('../assets/home_banner.jpg');
+  // background-image: url('../assets/white_bg.jpg');
+  // background-size: cover;
    background-image: linear-gradient(0.2turn, #2f2f30, #1e3012, #034628);
   background-position: center;
   background-repeat: no-repeat;

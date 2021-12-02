@@ -21,7 +21,7 @@
           看更多
         </button>
       </div>
-      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+      <div class="pic" data-aos="fade-up" data-aos-duration="1000" style="margin-right: 0; margin-left: -5%;">
         <img :src="card2" :alt="card2">
       </div>
     </div>
@@ -32,7 +32,7 @@
       </div>
       <div class="txt" data-aos="fade-down" data-aos-duration="1500">
         <h2>3. 完成</h2>
-        <p>獲得成效</p>
+        <p>完成</p>
         <button class="btn">
           看更多
         </button>
@@ -98,9 +98,6 @@ export default Vue.extend({
         padding: 5px 20px;
         border: none;
         transition: all 0.2s;
-        animation-name: show;
-        animation-duration: 1.2s;
-        animation-timing-function: ease-in-out;
         &:hover{
           cursor: pointer;
           opacity: 0.9;

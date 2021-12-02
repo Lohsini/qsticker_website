@@ -7,7 +7,7 @@
         <p>傳真：(03) 657-3889</p>
         <p>地址：新竹縣竹北市縣政二路488號2樓</p>
       </div>
-      <div class="block input-area" data-aos="zoom-in-up">
+      <div class="block input-area">
         <h2>取得最新消息和更新</h2>
         <input type="email" placeholder="請填寫E-mail">
         <button class="btn">
@@ -27,7 +27,8 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .contact-area{
-  background-image: url('../assets/kraft_paper.jpg');
+  // background-image: url('../assets/kraft_paper.jpg');
+  background-image: url('../assets/paper_bg.jpg');
   .container{
     display: flex;
     vertical-align: middle;
@@ -41,7 +42,6 @@ export default Vue.extend({
       align-items: center;
       flex-direction: column;
       border-radius: 2px;
-
     }
     .txt{
       font-weight: 600;
@@ -50,7 +50,8 @@ export default Vue.extend({
       }
     }
     .input-area{
-      background-color: rgba(255, 238, 161, 0.6);
+      // background-color: rgba(255, 238, 161, 0.6);
+      background-color: #69696915;
       input{
         border: none;
         background-color: transparent;
