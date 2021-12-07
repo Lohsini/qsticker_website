@@ -18,7 +18,7 @@
         </div>
         <div class="right">
           <button class="btn">
-            立即加入
+            <a href="https://qsticker.github.io/#/register">立即加入<i class="fas fa-chevron-right" /></a>
           </button>
         </div>
       </div>
@@ -82,18 +82,25 @@ export default Vue.extend({
         button{
           font-size: 1.5rem;
           font-weight: 600;
-          background-color: #3f87a6;
+          background-color: rgb(144, 208, 248);
           color: #fff;
-          border-radius: 2px;
+          border-radius: 50px;
           padding: 5px 20px;
           border: none;
           transition: all 0.2s;
           animation-name: show;
           animation-duration: 1.2s;
           animation-timing-function: ease-in-out;
+          a{
+            text-decoration: none;
+            color: #fff;
+            i{
+              margin-left: 10px;
+            }
+          }
           &:hover{
+            background-color: #bfe3fa;
             cursor: pointer;
-            opacity: 0.9;
             transition: all 0.2s;
           }
         }

@@ -18,18 +18,26 @@
         </router-link>
       </div>
       <div class="contact">
-        <div class="line">
-          <i class="fab fa-line" />
-        </div>
-        <p>互動貼圖</p>
         <div class="email">
-          <i class="fas fa-envelope" />
+          <div class="icon">
+            <i class="fas fa-envelope" />
+          </div>
+          <p>lohi3152@gmail.com</p>
         </div>
-        <p>lohi3152@gmail.com</p>
+        <div class="phone">
+          <div class="icon">
+            <i class="fas fa-phone" />
+          </div>
+          <p>(03) 657-3989</p>
+        </div>
       </div>
     </div>
     <div class="copyright">
-      Copyright2021 © 學力科技
+      <div class="container">
+        <p>
+          Copyright2021 © 學力科技
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -72,41 +80,43 @@ export default Vue.extend({
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      .line{
-        i{
-          font-size: 2.2rem;
-          color: #999;
-          &:hover{
-            color: #555;
-          }
-        }
-      }
-      .email{
-        width: 2rem;
-        height: 2rem;
+      .email, .phone{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        color: rgb(255, 244, 197);
-        background-color: #999;
-        border-radius: 5px;
-        i{
+        .icon{
           width: 1.5rem;
           height: 1.5rem;
-          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(255, 244, 197);
+          background-color: #1d4b11;
+          border-radius: 5px;
+          i{
+            width: 1rem;
+            height: 1rem;
+            font-size: 1rem;
+          }
         }
-        &:hover{
-          background-color: #555;
+        p{
+          margin: 0 20px;
         }
       }
     }
 
   }
   .copyright{
-    background-color: rgb(252, 230, 133);
-    padding: 5px;
-    font-size: 0.9rem;
+    // background-color: rgb(252, 230, 133);
+    .container{
+      padding-top: 0;
+    }
+    p{
+      text-align: left;
+      padding: 0 10px;
+      margin: 0;
+      font-size: 0.7rem;
+    }
   }
 }
 </style>

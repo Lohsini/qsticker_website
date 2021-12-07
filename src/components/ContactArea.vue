@@ -7,8 +7,8 @@
         <p>傳真：(03) 657-3889</p>
         <p>地址：新竹縣竹北市縣政二路488號2樓</p>
       </div>
-      <div class="block input-area">
-        <h2>取得最新消息和更新</h2>
+      <div class="block input-area" data-aos="zoom-in" data-aos-duration="1000">
+        <h2>取得最新消息</h2>
         <input type="email" placeholder="請填寫E-mail">
         <button class="btn">
           送出

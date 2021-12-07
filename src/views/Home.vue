@@ -8,7 +8,7 @@
 
     <FilmArea style="margin-bottom: 100px" />
 
-    <ExperienceArea style="margin: 50px 0" />
+    <ExperienceArea style="margin-bottom: 100px" />
 
     <ContactArea />
 

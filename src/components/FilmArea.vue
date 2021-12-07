@@ -10,10 +10,10 @@
           現在就去
         </p>
         <button class="btn btn-primary">
-          登入
+          <a href="https://qsticker.github.io/#/login">登入</a>
         </button>
         <button class="btn btn-primary">
-          註冊
+          <a href="https://qsticker.github.io/#/register">註冊</a>
         </button>
       </div>
     </div>
@@ -60,13 +60,19 @@
         margin: 5px;
         border: none;
         transition: all 0.2s;
+        a{
+          text-decoration: none;
+          color: #000;
+        }
         &:hover{
           cursor: pointer;
           opacity: 0.9;
           transition: all 0.2s;
           background-color: #1d4b11;
           color: #fff;
-
+          a{
+            color: #fff;;
+          }
         }
       }
     }

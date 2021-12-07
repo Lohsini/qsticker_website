@@ -19,7 +19,7 @@
               </p>
             </div>
             <div class="image">
-              <img src="../assets/QRCode.png" alt="">
+              <img :src="QRCode" alt="QRCode">
             </div>
           </div>
           <div class="item col-md-4">
@@ -28,24 +28,24 @@
               <p>打開「選單」<br>點擊選單「加入班級」</p>
             </div>
             <div class="image">
-              <img src="../assets/join_class.png" alt="">
+              <img :src="joinClass" alt="join_class">
             </div>
           </div>
           <div class="item col-md-4">
             <div class="info">
               <h2>3</h2>
-              <p>輸入班級名稱：<br>「體驗班#125」</p>
+              <p>輸入班級名稱：<br>「demo#122」</p>
             </div>
-            <div class="image">
-              <img :src="card1" alt="">
+            <div class="image addMemberGroup">
+              <img :src="addMemberGroup" alt="addMemberGroup">
             </div>
           </div>
         </div>
-        <div class="block">
+        <div class="block mt-5">
           <div class="item col-md-4">
             <div class="info">
               <h2>4</h2>
-              <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題體驗</p>
+              <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
             </div>
           </div>
         </div>
@@ -71,9 +71,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import ExperienceCard from '@/components/ExperienceCard.vue';
-import card1 from '@/assets/card1.jpg';
-import card2 from '@/assets/card2.jpg';
-import card3 from '@/assets/card3.jpg';
+
+import QRCode from '@/assets/QRCode.png';
+import joinClass from '@/assets/join_class.png';
+import addMemberGroup from '@/assets/add_memberGroup.png';
 
 export default Vue.extend({
   components: {
@@ -81,25 +82,27 @@ export default Vue.extend({
   },
   data() {
     return {
-      card1,
+      QRCode,
+      joinClass,
+      addMemberGroup,
       contents: [
         {
-          imgURL: card1,
-          alt: 'card1.jpg',
+          imgURL: 'https://storage.googleapis.com/quiz-storage/images/7IIOZaGCu3xVCqq',
+          alt: '《滿意度調查》',
           title: '《滿意度調查》',
           txt: '適用於活動結束後收集資料',
           shortId: 'q1458',
         },
         {
-          imgURL: card2,
-          alt: 'card2.jpg',
+          imgURL: 'https://storage.googleapis.com/quiz-storage/images/6lJIuuJC326fFeu',
+          alt: '《認識動物》',
           title: '《認識動物》',
           txt: '簡單易懂的圖卡設計，適用於幼兒及低年級學生',
           shortId: 'q2785',
         },
         {
-          imgURL: card3,
-          alt: 'card3.jpg',
+          imgURL: 'https://storage.googleapis.com/quiz-storage/images/kJE5YaavHKlB2mN',
+          alt: '《Indonesia Demo》',
           title: '《Indonesia Demo》',
           txt: '專門用印尼文製作的題目，此測驗擁有完整體驗流程，適用於補習班',
           shortId: 'q3643',
@@ -118,11 +121,13 @@ export default Vue.extend({
   padding: 0;
 }
 .experience-area{
-  // padding: 30px 0;
+  border: #1d4b11 2px dashed;
+  margin: 2%;
+  padding: 50px;
   .steps{
     .block{
       // background-color: #fc8585;
-      margin: 20px;
+      // margin: 20px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -130,6 +135,7 @@ export default Vue.extend({
         .info{
           display: flex;
           align-items: center;
+          margin-bottom: 10px;
           h2{
             width: 10%;
             color: #aaa;
@@ -145,9 +151,14 @@ export default Vue.extend({
         }
         .image{
           margin: auto;
-          height: 100px;
+          height: 200px;
           img{
             height: 100%;
+          }
+        }
+        .addMemberGroup{
+          img{
+            border: #aaa 1px solid;
           }
         }
       }

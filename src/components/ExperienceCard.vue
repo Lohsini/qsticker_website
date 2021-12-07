@@ -7,13 +7,12 @@
       <div class="title">
         {{ content.title }}
       </div>
-      <p class="copy" title="複製測驗代碼" @click="copyEventCode(content.shortId)">
-        題組代碼：{{ content.shortId }}
-        <span v-if="copyMessageDisplay === false">
-          <i class="far fa-copy" />
+      <p title="複製測驗代碼" @click="copyEventCode(content.shortId)">
+        <span v-if="copyMessageDisplay === false" class="copy">
+          題組代碼：{{ content.shortId }}<i class="far fa-copy" />
         </span>
-        <span v-if="copyMessageDisplay === true">
-          <i class="fas fa-check-circle text-success" />
+        <span v-if="copyMessageDisplay === true" class="copy">
+          題組代碼：{{ content.shortId }}<i class="fas fa-check-circle text-success" />
         </span>
       </p>
       <p class="txt">
@@ -70,29 +69,34 @@ export default Vue.extend({
   padding: 0;
 }
 .experience-card{
+  padding: 20px;
   .image{
     position: relative;
     img{
       width: 100%;
       height: 300px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   .info{
-    padding: 20px;
     .title{
       font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin: 10px;
     }
     p{
       text-align: left;
-      margin-bottom: 10px;
-    }
-    .copy{
-      &:hover{
-        cursor: pointer;
+      .copy{
+        i{
+          margin-left: 10px;
+        }
+        &:hover{
+          cursor: pointer;
+        }
       }
+    }
+    p + p {
+      margin-top: 10px;
     }
   }
 }

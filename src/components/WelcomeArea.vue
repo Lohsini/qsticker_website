@@ -1,5 +1,11 @@
 <template>
   <div class="welcome-area">
+    <div class="clouds">
+      <img :src="clouds" alt="clouds">
+    </div>
+    <div class="building">
+      <img :src="building" alt="building">
+    </div>
     <div class="title">
       <h1>歡迎來到學力科技</h1>
     </div>
@@ -18,13 +24,22 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import clouds from '@/assets/clouds.png';
+import building from '@/assets/building.png';
 
 export default Vue.extend({
+  data() {
+    return {
+      clouds,
+      building,
+    };
+  },
 });
 </script>
 
 <style scoped lang="scss">
 .welcome-area{
+  position: relative;
   .title{
     h1{
       margin: 0;
@@ -44,6 +59,29 @@ export default Vue.extend({
   .txt{
 
   }
+  .clouds{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 30%;
+    animation-name: cloudsAnimate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    img{
+      width: 100%;
+    }
+  }
+  .building{
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    right: 0;
+    width: 30%;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 @keyframes iconAnimate {
@@ -52,6 +90,22 @@ export default Vue.extend({
   }
   to{
     transform: translateY(-3px);
+  }
+}
+@keyframes cloudsAnimate {
+  from {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 0.8;
+  }
+  to{
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 </style>
