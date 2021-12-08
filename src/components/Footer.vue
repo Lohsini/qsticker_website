@@ -5,17 +5,17 @@
         <router-link to="/">
           首頁
         </router-link> |
-        <router-link to="/about">
-          關於
+        <router-link to="/contact">
+          聯絡我們
         </router-link> |
-        <router-link to="/about">
+        <router-link to="/login">
           會員登入
         </router-link> |
-        <a href="https://qsticker.github.io/#/login">互動貼圖後台</a> |
-        <a href="https://qsticker.github.io/#/login">知識地圖後台</a> |
-        <router-link to="/about">
-          圖表分析
-        </router-link>
+        <a href="https://qsticker.github.io/#/login">互動貼圖後台</a>
+      <!-- |<a href="https://qsticker.github.io/#/login">知識地圖後台</a> | -->
+      <!-- <router-link to="/about">
+        圖表分析
+      </router-link> -->
       </div>
       <div class="contact">
         <div class="email">

@@ -18,6 +18,9 @@
       <p class="txt">
         題組簡介：<br>{{ content.txt }}
       </p>
+      <button @click.prevent="openAnswerModal(content.imgURL)">
+        看解答
+      </button>
     </div>
   </div>
 </template>
@@ -57,6 +60,11 @@ export default Vue.extend({
     clearCopyMessageTimeout() {
       this.clearCopyMessage();
       clearTimeout(this.copyMessageTimeoutId);
+    },
+    openAnswerModal(imgURL: string) {
+      this.$modal.show('answer-modal', {
+        answerModal: imgURL,
+      });
     },
 
   },
