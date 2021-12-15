@@ -66,15 +66,15 @@ export default Vue.extend({
   min-height: calc(100vh - 50px);
   .banner{
     .title{
-      background-color: aliceblue;
       padding: 20px;
       font-weight: 600;
       margin: 0;
 
     }
     .info{
-      padding: 50px;
-      margin: 0;
+      background-color: aliceblue;
+      padding: 20px;
+      margin: 30px;
       font-size: 1.2rem;
     }
   }

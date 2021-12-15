@@ -92,6 +92,7 @@ export default Vue.extend({
           align-items: center;
           color: rgb(255, 244, 197);
           background-color: #1d4b11;
+          background-color: rgb(80, 40, 2);
           border-radius: 5px;
           i{
             width: 1rem;
