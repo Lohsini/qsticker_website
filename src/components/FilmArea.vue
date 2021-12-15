@@ -55,9 +55,9 @@
         font-weight: 600;
         background-color: rgb(255, 238, 161);
         color: #000;
-        border-radius: 2px;
-        padding: 5px 20px;
-        margin: 5px;
+        border-radius: 50px;
+        padding: 5px 50px;
+        margin: 5px 20px;
         border: none;
         transition: all 0.2s;
         a{
@@ -68,7 +68,7 @@
           cursor: pointer;
           opacity: 0.9;
           transition: all 0.2s;
-          background-color: #1d4b11;
+          background-color: #44371b;
           color: #fff;
           a{
             color: #fff;;

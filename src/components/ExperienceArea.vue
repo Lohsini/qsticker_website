@@ -63,6 +63,9 @@
           <ExperienceCard
             :content="item"
           />
+          <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
+            看解答
+          </button>
         </div>
       </div>
     </div>
@@ -76,6 +79,9 @@ import ExperienceCard from '@/components/ExperienceCard.vue';
 import QRCode from '@/assets/QRCode.png';
 import joinClass from '@/assets/join_class.png';
 import addMemberGroup from '@/assets/add_memberGroup.png';
+import answer1 from '@/assets/answer1.png';
+import answer2 from '@/assets/answer2.png';
+import answer3 from '@/assets/answer3.png';
 
 export default Vue.extend({
   components: {
@@ -83,6 +89,9 @@ export default Vue.extend({
   },
   data() {
     return {
+      answer1,
+      answer2,
+      answer3,
       QRCode,
       joinClass,
       addMemberGroup,
@@ -92,26 +101,34 @@ export default Vue.extend({
           alt: '《滿意度調查》',
           title: '《滿意度調查》',
           txt: '適用於活動結束後收集資料',
-          shortId: 'q1458',
+          shortId: 'qvbiix', // 真的
+          answerPic: answer1,
         },
         {
           imgURL: 'https://storage.googleapis.com/quiz-storage/images/6lJIuuJC326fFeu',
           alt: '《認識動物》',
           title: '《認識動物》',
           txt: '簡單易懂的圖卡設計，適用於幼兒及低年級學生',
-          shortId: 'q2785',
+          shortId: 'qmho7j', // 真的
+          answerPic: answer2,
         },
         {
           imgURL: 'https://storage.googleapis.com/quiz-storage/images/kJE5YaavHKlB2mN',
           alt: '《Indonesia Demo》',
           title: '《Indonesia Demo》',
           txt: '專門用印尼文製作的題目，此測驗擁有完整體驗流程，適用於補習班',
-          shortId: 'q3643',
+          shortId: 'q0pvlq', // 真的
+          answerPic: answer3,
         },
       ],
     };
   },
   methods: {
+    openAnswerModal(imgURL: string) {
+      this.$modal.show('answer-modal', {
+        answerModal: imgURL,
+      });
+    },
   },
 });
 </script>
@@ -177,6 +194,21 @@ export default Vue.extend({
         position: relative;
         background-color: #fff;
         width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .btn{
+          border-radius: 2px;
+          background-color: rgba(252, 230, 133, 0.5);
+          width: 90%;
+          align-self: center;
+          margin-bottom: 10px;
+          &:hover{
+            background-color: rgba(252, 131, 131, 0.5);
+          }
+        }
       }
       .block + .block{
         margin-left: 10px;

@@ -32,7 +32,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .content{
   background-color: aquamarine;
-  width: 100px;
+  width: 500px;
   img{
     width: 100%;
   }
