@@ -57,6 +57,7 @@
         <div v-for="(item, key) in contents" :key="key" class="block"
              data-aos="flip-left"
              data-aos-duration="1500"
+             data-aos-once="true"
              :data-aos-delay="key*200"
         >
           <ExperienceCard

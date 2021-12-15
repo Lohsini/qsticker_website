@@ -1,7 +1,11 @@
 <template>
   <div class="introduce-area">
     <div class="container">
-      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+      <div class="pic"
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-once="true"
+      >
         <img :src="pic1" :alt="pic1">
       </div>
       <div class="txt">
@@ -27,13 +31,22 @@
           看更多
         </button>
       </div>
-      <div class="pic" data-aos="fade-up" data-aos-duration="1000" style="margin-right: 0; margin-left: -5%;">
+      <div class="pic"
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-once="true"
+           style="margin-right: 0; margin-left: -5%;"
+      >
         <img :src="pic2" :alt="pic2">
       </div>
     </div>
 
     <div class="container">
-      <div class="pic" data-aos="fade-up" data-aos-duration="1000">
+      <div class="pic"
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-once="true"
+      >
         <img :src="pic3" :alt="pic3">
       </div>
       <div class="txt">

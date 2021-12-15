@@ -13,6 +13,8 @@
     <ContactArea />
 
     <AnswerModal />
+
+    <Footer />
   </div>
 </template>
 
@@ -25,6 +27,7 @@ import FilmArea from '@/components/FilmArea.vue';
 import ExperienceArea from '@/components/ExperienceArea.vue';
 import ContactArea from '@/components/ContactArea.vue';
 import AnswerModal from '@/components/AnswerModal.vue';
+import Footer from '@/components/Footer.vue';
 
 export default Vue.extend({
   components: {
@@ -35,6 +38,7 @@ export default Vue.extend({
     ExperienceArea,
     ContactArea,
     AnswerModal,
+    Footer,
   },
   data() {
     return {

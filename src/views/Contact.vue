@@ -4,15 +4,18 @@
       聯絡我們
     </h1>
     <ContactArea />
+    <Footer />
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue';
 import ContactArea from '@/components/ContactArea.vue';
+import Footer from '@/components/Footer.vue';
 
 export default Vue.extend({
   components: {
     ContactArea,
+    Footer,
   },
   data() {
     return {
