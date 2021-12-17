@@ -39,7 +39,6 @@ export default Vue.extend({
     align-items: center;
     padding: 50px;
     .block{
-      width: 50%;
       height: 300px;
       display: flex;
       justify-content: center;
@@ -48,12 +47,15 @@ export default Vue.extend({
       border-radius: 2px;
     }
     .txt{
+      width: 40%;
       font-weight: 600;
       h2{
         margin: 20px;
       }
     }
     .input-area{
+      width: 60%;
+
       // background-color: rgba(255, 238, 161, 0.6);
       background-color: #69696915;
       input{
@@ -71,6 +73,7 @@ export default Vue.extend({
         font-size: 1rem;
         font-weight: 100;
         background-color: #1d4b11;
+        background-color: #111c4b;
         color: #fff;
         border-radius: 2px;
         padding: 5px 20px;

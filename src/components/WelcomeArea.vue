@@ -30,11 +30,8 @@
         <i class="fas fa-caret-down" />
       </div>
       <div class="txt">
-        多肉行旅想把種植多肉植物的各種美好分享給大家，<br>
-        就像好友之間訴說著彼此的種植經驗、以及對於美好生活的想像。<br>
-        經歷過工作與生活的衝撞，多肉植物讓兩者產生平衡，<br>
-        透過養護植物，也時時提醒著看照自己的心情，<br>
-        慢下腳步感受情緒，活力有朝氣的過每一天。<br>
+        HotelsCombined全球最佳飯店比價網站！<br>只需一次搜尋就可比價所有熱門訂房網站與旅客評價<br>保證找到最優惠價格！
+        上Booking.com 探索世界。<br>預訂民宿、飯店、機票、租車、計程車和景點活動都可享省錢優惠<br>找飯店、民宿、住宿、旅館。任何預算都能打造完美旅程。
       </div>
     </div>
 
@@ -97,7 +94,6 @@ export default Vue.extend({
     font-size: 3rem;
     color: #000;
     margin: 50px;
-    border-bottom: rgb(216, 216, 216) dotted 5px;
     margin-top: 0;
     .brand{
       padding-right: 10px;
@@ -127,6 +123,8 @@ export default Vue.extend({
   }
   .btn-area{
     margin: 30px;
+    padding-bottom: 60px;
+    border-bottom: rgb(216, 216, 216) dotted 5px;
     button{
       font-size: 1.5rem;
       font-weight: 600;

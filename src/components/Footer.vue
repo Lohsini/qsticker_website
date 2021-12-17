@@ -53,8 +53,10 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .footer{
-  background-color: rgb(255, 244, 197);
-  font-weight: bold;
+  background-color: rgb(80, 80, 80);
+  // background-color: rgb(255, 244, 197);
+  color: #fff;
+  // font-weight: bold;
   .container{
     display: flex;
     justify-content: space-between;
@@ -64,7 +66,8 @@ export default Vue.extend({
     .navbar-links{
       a {
         text-decoration: none;
-        color: #2c3e50;
+        // color: #2c3e50;
+        color: #fff;
         padding: 0 10px;
 
         &.router-link-exact-active {
@@ -80,6 +83,7 @@ export default Vue.extend({
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .email, .phone{
         display: flex;
         justify-content: space-between;
@@ -90,9 +94,10 @@ export default Vue.extend({
           display: flex;
           justify-content: center;
           align-items: center;
-          color: rgb(255, 244, 197);
+          color: rgb(80, 80, 80);
           background-color: #1d4b11;
           background-color: rgb(80, 40, 2);
+          background-color: #fff;
           border-radius: 5px;
           i{
             width: 1rem;

@@ -134,10 +134,10 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-}
+// *{
+//   margin: 0;
+//   padding: 0;
+// }
 .experience-area{
   border: #1d4b11 2px dashed;
   margin: 2%;

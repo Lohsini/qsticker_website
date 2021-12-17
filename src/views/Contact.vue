@@ -44,6 +44,8 @@ export default Vue.extend({
   .title{
     margin: 20px;
     padding: 20px;
+    margin-top: 0;
+    padding-top: 40px;
     border-bottom: rgb(216, 216, 216) dotted 5px;
     font-weight: 600;
   }

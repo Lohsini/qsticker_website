@@ -1,33 +1,35 @@
 <template>
   <div class="contact">
-    <div class="banner">
-      <h1 class="title">
-        會員登入
-      </h1>
-      <p class="info">
-        請選擇登入平台
-      </p>
-    </div>
-    <div class="login-btns">
-      <div class="container">
-        <div class="btn-area">
-          <div class="big-btn col-md-4">
-            <a href="https://qsticker.github.io/#/login">
-              <p><span>互動貼圖後台</span></p>
-              <img :src="pic1" alt="pic1">
-            </a>
-          </div>
-          <div class="big-btn col-md-4">
-            <a href="https://qsticker.github.io/#/login">
-              <p><span>知識地圖後台</span></p>
-              <img :src="pic2" alt="pic2">
-            </a>
-          </div>
-          <div class="big-btn col-md-4">
-            <a href="https://qsticker.github.io/#/login">
-              <p><span>學力診斷報告</span></p>
-              <img :src="pic3" alt="pic3">
-            </a>
+    <div>
+      <div class="banner">
+        <h1 class="title">
+          會員登入
+        </h1>
+        <p class="info">
+          請選擇登入平台
+        </p>
+      </div>
+      <div class="login-btns">
+        <div class="container">
+          <div class="btn-area">
+            <div class="big-btn col-md-4">
+              <a href="https://qsticker.github.io/#/login">
+                <p><span>互動貼圖後台</span></p>
+                <img :src="pic1" alt="pic1">
+              </a>
+            </div>
+            <div class="big-btn col-md-4">
+              <a href="https://qsticker.github.io/#/login">
+                <p><span>知識地圖後台</span></p>
+                <img :src="pic2" alt="pic2">
+              </a>
+            </div>
+            <div class="big-btn col-md-4">
+              <a href="https://qsticker.github.io/#/login">
+                <p><span>學力診斷報告</span></p>
+                <img :src="pic3" alt="pic3">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -62,12 +64,17 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .contact{
-  position: relative;
+  height: 100%;
   min-height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .banner{
     .title{
-      margin: 20px;
       padding: 20px;
+      margin: 20px;
+      margin-top: 0;
+      padding-top: 40px;
       border-bottom: rgb(216, 216, 216) dotted 5px;
       font-weight: 600;
     }
@@ -79,6 +86,7 @@ export default Vue.extend({
     }
   }
   .login-btns{
+    margin: 20px;
     .container{
       .btn-area{
         display: flex;
@@ -127,8 +135,6 @@ export default Vue.extend({
   }
   .footer{
     width: 100%;
-    position: absolute;
-    bottom: 0;
   }
 }
 </style>
