@@ -1,14 +1,14 @@
 <template>
   <div class="introduce-area">
-    <div class="container">
-      <div class="pic"
+    <div class="container row">
+      <div class="pic col-md-6 col-sm-12"
            data-aos="fade-up"
            data-aos-duration="1000"
            data-aos-once="true"
       >
         <img :src="pic1" :alt="pic1">
       </div>
-      <div class="txt">
+      <div class="txt col-md-6 col-sm-12">
         <h3 class="number first">
           01
         </h3>
@@ -23,8 +23,16 @@
       </div>
     </div>
 
-    <div class="container second">
-      <div class="txt">
+    <div class="container row second-reverse">
+      <div class="pic col-md-6 col-sm-12"
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-once="true"
+           style="margin-right: 0; margin-left: 0%;"
+      >
+        <img :src="pic2" :alt="pic2">
+      </div>
+      <div class="txt col-md-6 col-sm-12">
         <h3 class="number">
           02
         </h3>
@@ -37,32 +45,24 @@
           看更多
         </button>
       </div>
-      <div class="pic"
-           data-aos="fade-up"
-           data-aos-duration="1000"
-           data-aos-once="true"
-           style="margin-right: 0; margin-left: 0%;"
-      >
-        <img :src="pic2" :alt="pic2">
-      </div>
     </div>
 
-    <div class="container">
-      <div class="pic"
+    <div class="container row">
+      <div class="pic col-md-6 col-sm-12"
            data-aos="fade-up"
            data-aos-duration="1000"
            data-aos-once="true"
       >
         <img :src="pic3" :alt="pic3">
       </div>
-      <div class="txt">
+      <div class="txt col-md-6 col-sm-12">
         <h3 class="number third">
           03
         </h3>
         <h2>取得報告</h2>
         <p>搭配【作答數據分析平台】</p>
         <p>
-          察看結果。HotelsCombined全球最佳飯店比價網站！
+          察看結果。全球最佳飯店比價網站，HotelsCombined全球最佳飯店比價網站！
           只需一次搜尋就可比價所有熱門訂房網站與旅客評價，保證找到最優惠價格！
         </p>
         <button class="btn">
@@ -99,16 +99,10 @@ export default Vue.extend({
 <style scoped lang="scss">
 .introduce-area{
   .container{
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
+    margin: auto;
     .pic{
-      width: 50%;
       height: 300px;
-      flex-shrink: 0;
       margin-top: 100px;
-      // margin-right: -5%;
-      z-index: 1;
       border-radius: 2px;
       img{
         width: 100%;
@@ -117,9 +111,7 @@ export default Vue.extend({
       }
     }
     .txt{
-      width: 50%;
       height: 300px;
-      flex-shrink: 0;
       background-color: rgba(255, 238, 161, 0.6);
       padding: 0 6%;
       border-radius: 2px;
@@ -162,7 +154,8 @@ export default Vue.extend({
       }
     }
   }
-  .second{
+  .second-reverse{
+    flex-direction: row-reverse;
     .txt{
       align-items: flex-end;
       h3{
@@ -171,6 +164,38 @@ export default Vue.extend({
       p{
         text-align: right;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .introduce-area {
+    .container {
+      .txt{
+        p{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .introduce-area {
+    .container {
+      flex-direction: row;
+      .txt{
+        margin-top: -10%;
+        p{
+          width: 80%;
+        }
+      }
+      .pic{
+        margin-top: 0px;
+      }
+    }
+    .second-reverse{
+      flex-direction: row;
     }
   }
 }

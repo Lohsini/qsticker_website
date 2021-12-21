@@ -10,7 +10,6 @@
       style="border:0;"
       allowfullscreen=""
       loading="lazy"
-      class="p-5"
     />
     <ContactArea />
     <!-- <div class="footer"> -->
@@ -39,8 +38,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .contact{
-  // position: relative;
-  // min-height: calc(100vh - 50px);
   .title{
     margin: 20px;
     padding: 20px;
@@ -49,10 +46,16 @@ export default Vue.extend({
     border-bottom: rgb(216, 216, 216) dotted 5px;
     font-weight: 600;
   }
-  // .footer{
-  //   width: 100%;
-  //   position: absolute;
-  //   bottom: 0;
-  // }
+  iframe{
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .contact{
+    iframe{
+      padding: 20px;
+    }
+  }
 }
 </style>

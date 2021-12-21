@@ -11,24 +11,30 @@
       </div>
       <div class="login-btns">
         <div class="container">
-          <div class="btn-area">
-            <div class="big-btn col-md-4">
-              <a href="https://qsticker.github.io/#/login">
-                <p><span>互動貼圖後台</span></p>
-                <img :src="pic1" alt="pic1">
-              </a>
+          <div class="btn-area row">
+            <div class="big-btn col-md-4 col-sm-12">
+              <div class="content">
+                <a href="https://qsticker.github.io/#/login">
+                  <p><span>互動貼圖後台</span></p>
+                  <img :src="pic1" alt="pic1">
+                </a>
+              </div>
             </div>
-            <div class="big-btn col-md-4">
-              <a href="https://qsticker.github.io/#/login">
-                <p><span>知識地圖後台</span></p>
-                <img :src="pic2" alt="pic2">
-              </a>
+            <div class="big-btn col-md-4 col-sm-12">
+              <div class="content">
+                <a href="https://qsticker.github.io/#/login">
+                  <p><span>知識地圖後台</span></p>
+                  <img :src="pic2" alt="pic2">
+                </a>
+              </div>
             </div>
-            <div class="big-btn col-md-4">
-              <a href="https://qsticker.github.io/#/login">
-                <p><span>學力診斷報告</span></p>
-                <img :src="pic3" alt="pic3">
-              </a>
+            <div class="big-btn col-md-4 col-sm-12">
+              <div class="content">
+                <a href="https://qsticker.github.io/#/login">
+                  <p><span>學力診斷報告</span></p>
+                  <img :src="pic3" alt="pic3">
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -94,39 +100,43 @@ export default Vue.extend({
         align-items: center;
         .big-btn{
           height: 350px;
-          margin: 10px;
-          border: aliceblue solid 5px;
-          overflow: hidden;
-          border-radius: 5px;
-          a{
-            width: 100%;
+          padding: 5px;
+          .content{
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-decoration: none;
-            p{
-              color: #888;
-              font-size: 1.5rem;
-              font-weight: 600;
-              padding-bottom: 10px;
-              margin: 0;
-              span{
-                padding: 8px;
-                border-bottom: rgb(107, 186, 255) 1px dashed;
+            // max-height: 250px;
+            border: aliceblue solid 5px;
+            border-radius: 5px;
+            overflow: hidden;
+            a{
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-decoration: none;
+              p{
+                color: #888;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-bottom: 10px;
+                margin: 0;
+                span{
+                  padding: 8px;
+                  border-bottom: rgb(107, 186, 255) 1px dashed;
+                }
+              }
+              img{
+                width: 100%;
+                max-height: 250px;
+                object-fit: contain;
               }
             }
-            img{
-              width: 100%;
-              height: 250px;
-              object-fit: cover;
-            }
-          }
-          &:hover{
-            // box-shadow: 0px 0px 10px#ddd;
-            border: rgb(181, 220, 255) 5px solid;
-            p {
-              color: #555;
+            &:hover{
+              // box-shadow: 0px 0px 10px#ddd;
+              border: rgb(181, 220, 255) 5px solid;
+              p {
+                color: #555;
+              }
             }
           }
         }

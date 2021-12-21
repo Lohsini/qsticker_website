@@ -8,9 +8,9 @@
 
     <ExperienceArea style="margin-bottom: 100px" />
 
-    <ContactArea />
-
     <AnswerModal />
+
+    <ContactArea />
 
     <Footer />
   </div>

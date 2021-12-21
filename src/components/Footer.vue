@@ -1,16 +1,16 @@
 <template>
   <div class="footer">
-    <div class="container">
+    <div class="container section">
       <div class="navbar-links">
         <router-link to="/">
           首頁
-        </router-link> |
+        </router-link> <span>|</span>
         <router-link to="/contact">
           聯絡我們
-        </router-link> |
+        </router-link> <span>|</span>
         <router-link to="/login">
           會員登入
-        </router-link> |
+        </router-link> <span>|</span>
         <a href="https://qsticker.github.io/#/login">互動貼圖後台</a>
       <!-- |<a href="https://qsticker.github.io/#/login">知識地圖後台</a> | -->
       <!-- <router-link to="/about">
@@ -54,9 +54,7 @@ export default Vue.extend({
 <style scoped lang="scss">
 .footer{
   background-color: rgb(80, 80, 80);
-  // background-color: rgb(255, 244, 197);
   color: #fff;
-  // font-weight: bold;
   .container{
     display: flex;
     justify-content: space-between;
@@ -66,7 +64,6 @@ export default Vue.extend({
     .navbar-links{
       a {
         text-decoration: none;
-        // color: #2c3e50;
         color: #fff;
         padding: 0 10px;
 
@@ -122,6 +119,47 @@ export default Vue.extend({
       padding: 0 10px;
       margin: 0;
       font-size: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .footer {
+    .container{
+      flex-direction: column;
+      .navbar-links{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .footer {
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .navbar-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        span{
+          display: none;
+        }
+        a{
+          padding: 5px 10px;
+        }
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 10px;
+        p{
+          padding: 5px 0;
+        }
+      }
     }
   }
 }

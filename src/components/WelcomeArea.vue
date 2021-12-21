@@ -9,12 +9,14 @@
       </div>
     </div>
 
-    <div class="title mb-5 py-5">
-      <div class="brand txt">
-        <i class="far fa-comment fa-flip-horizontal" />
-      </div>
-      <div class="txt">
-        互動貼圖
+    <div class="title py-5">
+      <div class="d-flex">
+        <div class="brand txt">
+          <i class="far fa-comment fa-flip-horizontal" />
+        </div>
+        <div class="txt">
+          互動貼圖
+        </div>
       </div>
       <div class="txt mx-3">
         X
@@ -153,6 +155,30 @@ export default Vue.extend({
   }
 }
 
+@media screen and (max-width: 750px){
+  .welcome-area {
+    .background {
+      .clouds{
+        top: 150px;
+        right: 300px;
+        width: 100%;
+      }
+      .building{
+        bottom: -50px;
+        width: 470px;
+      }
+    }
+    .title{
+      flex-direction: column;
+      font-size: 2.3rem;
+      margin: 0;
+    }
+    .content{
+      padding: 0 30px;
+    }
+  }
+}
+
 @keyframes iconAnimate {
   from {
     transform: translateY(3px);
@@ -161,6 +187,7 @@ export default Vue.extend({
     transform: translateY(-3px);
   }
 }
+
 @keyframes cloudsAnimate {
   from {
     transform: translateX(0%);

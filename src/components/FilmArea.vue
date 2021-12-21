@@ -23,8 +23,7 @@
 <style lang="scss" scoped>
 .film-area{
   width: 100%;
-  padding: 30px;
-  // background-image: url('../assets/paper_bg.jpg');
+  padding: 30px 10px;
   background-image: url('../assets/kraft_paper.jpg');
   display: flex;
   flex-direction: column;
@@ -41,6 +40,7 @@
     justify-content: center;
     align-items: center;
     .viedo{
+      width: 100%;
       max-width: 800px;
     }
     .action-btns{
@@ -66,13 +66,25 @@
         }
         &:hover{
           cursor: pointer;
-          opacity: 0.9;
+          opacity: 0.7;
           transition: all 0.2s;
           background-color: #44371b;
           color: #fff;
           a{
             color: #fff;;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .film-area {
+    .film {
+      .action-btns{
+        button{
+          font-size: 1rem;
         }
       }
     }

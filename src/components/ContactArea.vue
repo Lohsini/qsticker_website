@@ -1,13 +1,13 @@
 <template>
   <div class="contact-area">
-    <div class="container">
-      <div class="block txt">
+    <div class="container row">
+      <div class="section txt col-md-4 col-sm-12">
         <h2>聯絡我們</h2>
         <p>電話：(03) 657-3989</p>
         <p>傳真：(03) 657-3889</p>
         <p>地址：新竹縣竹北市縣政二路488號2樓</p>
       </div>
-      <div class="block input-area"
+      <div class="section input-area col-md-8 col-sm-12"
            data-aos="zoom-in"
            data-aos-duration="1000"
            data-aos-once="true"
@@ -31,14 +31,11 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .contact-area{
-  // background-image: url('../assets/kraft_paper.jpg');
   background-image: url('../assets/paper_bg.jpg');
   .container{
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    padding: 50px;
-    .block{
+    margin: auto;
+    padding: 50px 0;
+    .section{
       height: 300px;
       display: flex;
       justify-content: center;
@@ -47,16 +44,12 @@ export default Vue.extend({
       border-radius: 2px;
     }
     .txt{
-      width: 40%;
       font-weight: 600;
       h2{
-        margin: 20px;
+        margin-bottom: 20px;
       }
     }
     .input-area{
-      width: 60%;
-
-      // background-color: rgba(255, 238, 161, 0.6);
       background-color: #69696915;
       input{
         border: none;
@@ -87,6 +80,17 @@ export default Vue.extend({
           opacity: 0.9;
           transition: all 0.2s;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .contact-area {
+    .container {
+      padding: 20px;
+      .txt{
+        height: 200px;
       }
     }
   }

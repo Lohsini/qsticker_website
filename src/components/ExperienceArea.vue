@@ -7,9 +7,9 @@
     </div>
 
     <div class="steps">
-      <div class="container">
-        <div class="block">
-          <div class="item col-md-4">
+      <div class="section">
+        <div class="container row m-auto p-0">
+          <div class="item col-md-4 col-sm-12">
             <div class="info">
               <h2>1</h2>
               <p>
@@ -22,7 +22,7 @@
               <img :src="QRCode" alt="QRCode">
             </div>
           </div>
-          <div class="item col-md-4">
+          <div class="item col-md-4 col-sm-12">
             <div class="info">
               <h2>2</h2>
               <p>打開「選單」<br>點擊選單「加入班級」</p>
@@ -31,7 +31,7 @@
               <img :src="joinClass" alt="join_class">
             </div>
           </div>
-          <div class="item col-md-4">
+          <div class="item col-md-4 col-sm-12">
             <div class="info">
               <h2>3</h2>
               <p>輸入班級名稱：<br>「demo#122」</p>
@@ -41,8 +41,10 @@
             </div>
           </div>
         </div>
-        <div class="block mt-5">
-          <div class="item col-md-4">
+      </div>
+      <div class="section mb-3">
+        <div class="container row m-auto p-0">
+          <div class="item col-md-4 col-sm-12">
             <div class="info">
               <h2>4</h2>
               <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
@@ -53,19 +55,21 @@
     </div>
 
     <div class="cards">
-      <div class="container">
-        <div v-for="(item, key) in contents" :key="key" class="block"
+      <div class="container row m-auto p-0">
+        <div v-for="(item, key) in contents" :key="key" class="content col-md-4 col-sm-12"
              data-aos="flip-left"
              data-aos-duration="1500"
              data-aos-once="true"
              :data-aos-delay="key*200"
         >
-          <ExperienceCard
-            :content="item"
-          />
-          <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
-            看解答
-          </button>
+          <div class="main">
+            <ExperienceCard
+              :content="item"
+            />
+            <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
+              看解答
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +113,7 @@ export default Vue.extend({
           alt: '《認識動物》',
           title: '《認識動物》',
           txt: '簡單易懂的圖卡設計，適用於幼兒及低年級學生',
-          shortId: 'qmho7j', // 真的
+          shortId: 'qrhkmv', // 真的
           answerPic: answer2,
         },
         {
@@ -134,33 +138,26 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-// *{
-//   margin: 0;
-//   padding: 0;
-// }
 .experience-area{
   border: #1d4b11 2px dashed;
   margin: 2%;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   .steps{
-    .block{
-      // background-color: #fc8585;
-      // margin: 20px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+    .section{
+      margin-bottom: 50px;
       .item{
+        padding: 10px;
         .info{
           display: flex;
           align-items: center;
-          margin-bottom: 10px;
           h2{
             width: 10%;
             color: #aaa;
-            margin-right: 20px;
           }
           p{
-            width: 70%;
+            width: 75%;
+            margin: 0;
           }
           a{
             text-decoration: none;
@@ -170,6 +167,7 @@ export default Vue.extend({
         .image{
           margin: auto;
           height: 200px;
+          margin-top: 20px;
           img{
             height: 100%;
           }
@@ -185,36 +183,54 @@ export default Vue.extend({
 
   .cards{
     .container{
-      display: flex;
-      justify-content: center;
-      .block{
-        border: 1px solid #fce685;
-        border-radius: 2px;
-        overflow: hidden;
-        position: relative;
-        background-color: #fff;
-        width: 30%;
-
+      .content{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        .btn{
+        .main{
+          border: 1px solid #fce685;
           border-radius: 2px;
-          background-color: rgba(252, 230, 133, 0.5);
-          width: 90%;
-          align-self: center;
-          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          margin: 10px;
+
+          .btn{
+            border-radius: 2px;
+            background-color: rgba(252, 230, 133, 0.5);
+            width: 90%;
+            align-self: center;
+            margin-bottom: 20px;
+            &:hover{
+              background-color: rgba(252, 131, 131, 0.5);
+            }
+          }
           &:hover{
-            background-color: rgba(252, 131, 131, 0.5);
+            border: #fc8585 1px solid;
           }
         }
+
       }
-      .block + .block{
-        margin-left: 10px;
-      }
-      .block:hover{
-        border: #fc8585 1px solid;
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .experience-area {
+    .steps {
+      .section{
+        .item{
+          .image{
+            height: auto;
+            width: 200px;
+            img{
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
