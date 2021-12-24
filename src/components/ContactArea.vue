@@ -14,7 +14,7 @@
       >
         <h2>取得最新消息</h2>
         <input type="email" placeholder="請填寫E-mail">
-        <button class="btn">
+        <button class="btn" @click="submit">
           送出
         </button>
       </div>
@@ -26,6 +26,12 @@
 import Vue from 'vue';
 
 export default Vue.extend({
+  methods: {
+    submit() {
+      // eslint-disable-next-line no-alert
+      window.alert('尚未開放');
+    },
+  },
 });
 </script>
 
@@ -58,6 +64,7 @@ export default Vue.extend({
         margin: 20px;
         width: 60%;
         padding: 10px;
+        border-radius: 0;
         &:focus{
           outline: none;
         }
@@ -66,7 +73,9 @@ export default Vue.extend({
         font-size: 1rem;
         font-weight: 100;
         background-color: #1d4b11;
+        background-color: rgb(87, 191, 255);
         background-color: #111c4b;
+        background-color: #485072;
         color: #fff;
         border-radius: 2px;
         padding: 5px 20px;

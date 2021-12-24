@@ -17,7 +17,7 @@
         <p>
           提供設計題目、建立題庫、建立成員群組、設定測驗排程與細節的後台，搭配通訊軟體快速蒐集資料。
         </p>
-        <button class="btn">
+        <button class="btn" @click="seeMore">
           看更多
         </button>
       </div>
@@ -37,11 +37,11 @@
           02
         </h3>
         <h2>學力診斷分析</h2>
-        <p>搭配【AITutot分析+影片平台】<br>搭配【貼圖診斷平台】</p>
+        <p>搭配【AITutor數據分析平台】<br>搭配【影片平台】</p>
         <p>
-          產生知識地圖。不確定以上兩種是不是同一個平台，介紹文字介紹文字介紹文字介紹文字。
+          全球最佳飯店比價網站，HotelsCombined全球最佳飯店比價網站！
         </p>
-        <button class="btn">
+        <button class="btn" @click="seeMore">
           看更多
         </button>
       </div>
@@ -60,12 +60,12 @@
           03
         </h3>
         <h2>取得報告</h2>
-        <p>搭配【作答數據分析平台】</p>
+        <p>搭配【AITutor數據分析平台】</p>
         <p>
-          察看結果。全球最佳飯店比價網站，HotelsCombined全球最佳飯店比價網站！
+          查看結果。全球最佳飯店比價網站，HotelsCombined全球最佳飯店比價網站！
           只需一次搜尋就可比價所有熱門訂房網站與旅客評價，保證找到最優惠價格！
         </p>
-        <button class="btn">
+        <button class="btn" @click="seeMore">
           看更多
         </button>
       </div>
@@ -91,18 +91,26 @@ export default Vue.extend({
       card1,
       card2,
       card3,
+      see: false,
     };
+  },
+  methods: {
+    seeMore() {
+      // eslint-disable-next-line no-alert
+      window.alert('尚未開放');
+    },
   },
 });
 </script>
 
 <style scoped lang="scss">
 .introduce-area{
+  position: relative;
   .container{
     margin: auto;
+    margin-top: 50px;
     .pic{
       height: 300px;
-      margin-top: 100px;
       border-radius: 2px;
       img{
         width: 100%;
@@ -184,8 +192,8 @@ export default Vue.extend({
   .introduce-area {
     .container {
       flex-direction: row;
+      margin-top: 10px;
       .txt{
-        margin-top: -10%;
         p{
           width: 80%;
         }

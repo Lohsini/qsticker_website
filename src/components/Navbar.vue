@@ -49,7 +49,7 @@ export default Vue.extend({
   background-color: #fff;
   position:sticky;
   top: 0;
-  z-index:10;
+  z-index:30;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +91,8 @@ export default Vue.extend({
 
 @media screen and (max-width: 750px){
   .navbar {
-    position: relative;
+    position:sticky;
+
     #nav {
       position: absolute;
       top: 110%;
@@ -107,6 +108,7 @@ export default Vue.extend({
         align-items: center;
         flex-direction: column;
         transition: height 0.3s;
+        z-index:30;
         height: 0px;
         a{
           padding: 10px;

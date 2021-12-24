@@ -2,11 +2,11 @@
   <div class="home">
     <WelcomeArea />
 
-    <IntroduceArea style="margin-bottom: 100px" />
+    <IntroduceArea style="margin-bottom: 50px" />
 
-    <FilmArea style="margin-bottom: 100px" />
+    <FilmArea style="margin-bottom: 50px" />
 
-    <ExperienceArea style="margin-bottom: 100px" />
+    <ExperienceArea style="margin-bottom: 50px" />
 
     <AnswerModal />
 

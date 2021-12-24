@@ -3,6 +3,7 @@ import AOS from 'aos';
 import animated from 'animate.css';
 import VueClipboard from 'vue-clipboard2';
 import vmodal from 'vue-js-modal';
+import { Route } from 'vue-router';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -21,7 +22,11 @@ new Vue({
   router,
   store,
   created() {
-    AOS.init();
+    AOS.init({ disable: 'phone' });
   },
   render: (h) => h(App),
 }).$mount('#app');
+
+router.afterEach((to: Route, from: Route) => {
+  window.scrollTo(0, 0);
+});

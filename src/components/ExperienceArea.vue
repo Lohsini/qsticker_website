@@ -104,7 +104,7 @@ export default Vue.extend({
           imgURL: 'https://storage.googleapis.com/quiz-storage/images/7IIOZaGCu3xVCqq',
           alt: '《滿意度調查》',
           title: '《滿意度調查》',
-          txt: '適用於活動結束後收集資料',
+          txt: '適用於活動結束後收集資料。只需一次搜尋就可比價所有熱門訂房網站與旅客評價，保證找到最優惠價格！',
           shortId: 'qvbiix', // 真的
           answerPic: answer1,
         },
@@ -112,7 +112,7 @@ export default Vue.extend({
           imgURL: 'https://storage.googleapis.com/quiz-storage/images/6lJIuuJC326fFeu',
           alt: '《認識動物》',
           title: '《認識動物》',
-          txt: '簡單易懂的圖卡設計，適用於幼兒及低年級學生',
+          txt: '簡單易懂的圖卡設計。只需一次搜尋就可比價所有熱門訂房網站與旅客評價，保證找到最優惠價格！',
           shortId: 'qrhkmv', // 真的
           answerPic: answer2,
         },
@@ -120,7 +120,7 @@ export default Vue.extend({
           imgURL: 'https://storage.googleapis.com/quiz-storage/images/kJE5YaavHKlB2mN',
           alt: '《Indonesia Demo》',
           title: '《Indonesia Demo》',
-          txt: '專門用印尼文製作的題目，此測驗擁有完整體驗流程，適用於補習班',
+          txt: '專門用印尼文製作的題目。此測驗擁有完整體驗流程，只需一次搜尋就可比價所有熱門訂房網站與旅客評價，保證找到最優惠價格！',
           shortId: 'q0pvlq', // 真的
           answerPic: answer3,
         },
@@ -129,9 +129,11 @@ export default Vue.extend({
   },
   methods: {
     openAnswerModal(imgURL: string) {
-      this.$modal.show('answer-modal', {
-        answerModal: imgURL,
-      });
+      // this.$modal.show('answer-modal', {
+      //   answerModal: imgURL,
+      // });
+      // eslint-disable-next-line no-alert
+      window.alert('即將開放');
     },
   },
 });
@@ -156,7 +158,7 @@ export default Vue.extend({
             color: #aaa;
           }
           p{
-            width: 75%;
+            width: 80%;
             margin: 0;
           }
           a{

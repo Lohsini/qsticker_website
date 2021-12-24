@@ -22,17 +22,17 @@
             </div>
             <div class="big-btn col-md-4 col-sm-12">
               <div class="content">
-                <a href="https://qsticker.github.io/#/login">
-                  <p><span>知識地圖後台</span></p>
-                  <img :src="pic2" alt="pic2">
+                <a href="https://qsticker.github.io/#/login" @click.prevent="enter">
+                  <p><span>AITutor數據分析平台</span></p>
+                  <img :src="pic3" alt="pic3">
                 </a>
               </div>
             </div>
             <div class="big-btn col-md-4 col-sm-12">
               <div class="content">
-                <a href="https://qsticker.github.io/#/login">
-                  <p><span>學力診斷報告</span></p>
-                  <img :src="pic3" alt="pic3">
+                <a href="https://qsticker.github.io/#/login" @click.prevent="enter">
+                  <p><span>影片編輯平台</span></p>
+                  <img :src="pic4" alt="pic4">
                 </a>
               </div>
             </div>
@@ -51,6 +51,7 @@ import Footer from '@/components/Footer.vue';
 import pic1 from '@/assets/pic1.png';
 import pic2 from '@/assets/pic2.png';
 import pic3 from '@/assets/pic3.png';
+import pic4 from '@/assets/pic4.png';
 
 export default Vue.extend({
   components: {
@@ -61,9 +62,14 @@ export default Vue.extend({
       pic1,
       pic2,
       pic3,
+      pic4,
     };
   },
   methods: {
+    enter() {
+      // eslint-disable-next-line no-alert
+      window.alert('尚未開放');
+    },
   },
 });
 </script>

@@ -47,7 +47,7 @@
       margin: 30px;
       p{
         font-size: 1.5rem;
-        font-weight: 600;
+        // font-weight: 600;
         color: rgb(255, 255, 255);
       }
       button{
@@ -66,9 +66,8 @@
         }
         &:hover{
           cursor: pointer;
-          opacity: 0.7;
           transition: all 0.2s;
-          background-color: #44371b;
+          background-color: #fdbf50;
           color: #fff;
           a{
             color: #fff;;
