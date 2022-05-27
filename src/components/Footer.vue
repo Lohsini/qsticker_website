@@ -12,10 +12,6 @@
           會員登入
         </router-link> <span>|</span>
         <a href="https://qsticker.github.io/#/login">互動貼圖後台</a>
-      <!-- |<a href="https://qsticker.github.io/#/login">知識地圖後台</a> | -->
-      <!-- <router-link to="/about">
-        圖表分析
-      </router-link> -->
       </div>
       <div class="contact">
         <div class="email">

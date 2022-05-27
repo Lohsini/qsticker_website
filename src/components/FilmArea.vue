@@ -7,7 +7,7 @@
       </video>
       <div class="action-btns">
         <p>
-          現在就去
+          現在就去(下載互動貼圖APP)
         </p>
         <button class="btn btn-primary">
           <a href="https://qsticker.github.io/#/login">登入</a>
