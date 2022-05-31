@@ -5,7 +5,7 @@
         互動貼圖
       </h1>
       <p>搭配【互動貼圖後台】網站</p>
-      <p>提供設計題目、建立題庫、建立成員群組、設定測驗排程與細節的後台，搭配通訊軟體快速蒐集資料。</p>
+      <p>提供設計題目、建立題庫、建立成員群組、設定測驗排程與細節的後台，搭配【互動貼圖 APP】快速蒐集資料。</p>
     </div>
 
     <div v-for="(content, key) in qstickerContent" :key="key">
@@ -72,10 +72,16 @@ export default Vue.extend({
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+      h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
       p{
+        font-weight: 600;
         text-align: justify;
       }
       ul{
+        padding: 1rem;
         li{
           text-align: left;
         }

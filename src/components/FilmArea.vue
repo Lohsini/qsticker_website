@@ -6,14 +6,11 @@
         <source src="../assets/DEMO(Chinese).mp4" type="video/mp4">
       </video>
       <div class="action-btns">
-        <p>
-          現在就去(下載互動貼圖APP)
-        </p>
         <button class="btn btn-primary">
-          <a href="https://qsticker.github.io/#/login">登入</a>
+          Android 下載
         </button>
         <button class="btn btn-primary">
-          <a href="https://qsticker.github.io/#/register">註冊</a>
+          ios 下載
         </button>
       </div>
     </div>

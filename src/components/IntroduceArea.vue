@@ -1,6 +1,6 @@
 <template>
   <div class="introduce-area">
-    <qstickerIntroduce class="divider" />
+    <qstickerIntroduce />
 
     <!-- <analysisIntroduce class="divider" /> -->
   </div>
