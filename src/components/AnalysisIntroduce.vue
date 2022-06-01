@@ -7,7 +7,6 @@
       <p class="m-0">
         搭配【AITutor數據分析平台】
       </p>
-      <p>搭配【影片平台】</p>
     </div>
   </div>
 </template>

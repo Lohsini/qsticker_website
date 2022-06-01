@@ -1,20 +1,20 @@
 <template>
   <div class="introduce-area">
-    <qstickerIntroduce />
+    <qstickerIntroduce class="divider" />
 
-    <!-- <analysisIntroduce class="divider" /> -->
+    <analysisIntroduce />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import qstickerIntroduce from '@/components/QstickerIntroduce.vue';
-// import analysisIntroduce from '@/components/AnalysisIntroduce.vue';
+import analysisIntroduce from '@/components/AnalysisIntroduce.vue';
 
 export default Vue.extend({
   components: {
     qstickerIntroduce,
-    // analysisIntroduce,
+    analysisIntroduce,
   },
   data() {
     return {
