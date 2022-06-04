@@ -5,14 +5,6 @@
       <video class="viedo" controls autoplay muted>
         <source src="../assets/DEMO(Chinese).mp4" type="video/mp4">
       </video>
-      <div class="action-btns">
-        <button class="btn btn-primary">
-          Android 下載
-        </button>
-        <button class="btn btn-primary">
-          ios 下載
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -39,38 +31,6 @@
     .viedo{
       width: 100%;
       max-width: 800px;
-    }
-    .action-btns{
-      margin: 30px;
-      p{
-        font-size: 1.5rem;
-        // font-weight: 600;
-        color: rgb(255, 255, 255);
-      }
-      button{
-        font-size: 1.5rem;
-        font-weight: 600;
-        background-color: rgb(255, 238, 161);
-        color: #000;
-        border-radius: 50px;
-        padding: 5px 50px;
-        margin: 5px 20px;
-        border: none;
-        transition: all 0.2s;
-        a{
-          text-decoration: none;
-          color: #000;
-        }
-        &:hover{
-          cursor: pointer;
-          transition: all 0.2s;
-          background-color: #fdbf50;
-          color: #fff;
-          a{
-            color: #fff;;
-          }
-        }
-      }
     }
   }
 }
