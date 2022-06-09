@@ -13,17 +13,18 @@
 .film-area{
   width: 100%;
   padding: 30px 10px;
-  background-image: url('../assets/kraft_paper.jpg');
+  // background-image: url('../assets/kraft_paper.jpg');
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   h1{
-    margin: 30px;
-    color: rgb(255, 255, 255);
-    // font-weight: 600;
+    // color: rgb(255, 255, 255);
+    margin-bottom: 30px;
   }
   .film{
+  border: solid 10px rgba(127, 174, 178, 0.219);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
