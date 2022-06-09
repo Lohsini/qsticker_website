@@ -2,11 +2,11 @@
   <div class="home">
     <WelcomeArea />
 
-    <DownloadArea style="margin-bottom: 50px" />
-
     <IntroduceArea style="margin-bottom: 50px" />
 
     <FilmArea style="margin-bottom: 50px" />
+
+    <DownloadArea style="margin-bottom: 50px" />
 
     <ExperienceArea style="margin-bottom: 50px" />
 

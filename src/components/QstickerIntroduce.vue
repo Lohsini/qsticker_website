@@ -58,6 +58,7 @@ export default Vue.extend({
 
     .pic{
       border-radius: 2px;
+      max-height: 300px;
       img{
         width: 100%;
         height: 100%;
@@ -115,9 +116,6 @@ export default Vue.extend({
       .pic{
         margin-top: 0px;
       }
-    }
-    .second-reverse{
-      flex-direction: row;
     }
   }
 }

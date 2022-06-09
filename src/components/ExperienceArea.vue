@@ -25,33 +25,21 @@
           <div class="item col-md-4 col-sm-12">
             <div class="info">
               <h2>2</h2>
-              <p>打開「選單」<br>點擊選單「加入班級」</p>
-            </div>
-            <div class="image">
-              <img :src="joinClass" alt="join_class">
-            </div>
-          </div>
-          <div class="item col-md-4 col-sm-12">
-            <div class="info">
-              <h2>3</h2>
-              <p>輸入班級名稱：<br>「demo#122」</p>
-            </div>
-            <div class="image addMemberGroup">
-              <img :src="addMemberGroup" alt="addMemberGroup">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section mb-3">
-        <div class="container row m-auto p-0">
-          <div class="item col-md-4 col-sm-12">
-            <div class="info">
-              <h2>4</h2>
               <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
             </div>
           </div>
         </div>
       </div>
+      <!-- <div class="section mb-3">
+        <div class="container row m-auto p-0">
+          <div class="item col-md-4 col-sm-12">
+            <div class="info">
+              <h2>2</h2>
+              <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
 
     <div class="cards">
