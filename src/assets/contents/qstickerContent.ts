@@ -1,6 +1,9 @@
 import quizGroupsPic from '@/assets/quizGroups.png';
 import memberGroupsPic from '@/assets/memberGroups.png';
 import quizEventsPic from '@/assets/quizEvents.png';
+import quizMapsPic from '@/assets/quizMaps.png';
+import viedoPic from '@/assets/viedoPic.png';
+import analysisPic from '@/assets/analysis.png';
 
 export default [
   {
@@ -40,6 +43,33 @@ export default [
       '發送多個題組',
       '事先排程日 / 週 / 月計畫',
       '問卷調查',
+    ],
+  },
+  {
+    title: '知識地圖',
+    img: quizMapsPic,
+    information: [
+      '設定相對應的題組和班級，進行時間、數量上的編排',
+    ],
+    items: [
+    ],
+  },
+  {
+    title: '分析報告',
+    img: analysisPic,
+    information: [
+      '設定相對應的題組和班級，進行時間、數量上的編排',
+    ],
+    items: [
+    ],
+  },
+  {
+    title: '影片複習',
+    img: viedoPic,
+    information: [
+      '設定相對應的題組和班級，進行時間、數量上的編排',
+    ],
+    items: [
     ],
   },
 ];
