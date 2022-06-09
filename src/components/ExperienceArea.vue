@@ -9,7 +9,7 @@
     <div class="steps">
       <div class="section">
         <div class="container row m-auto p-0">
-          <div class="item col-md-4 col-sm-12">
+          <div class="item col-md-3 col-sm-12">
             <div class="info">
               <h2>1</h2>
               <p>
@@ -22,10 +22,29 @@
               <img :src="QRCode" alt="QRCode">
             </div>
           </div>
-          <div class="item col-md-4 col-sm-12">
-            <div class="info">
+          <div class="item col-md-9 col-sm-12">
+            <div class="info col-md-4 col-sm-12">
               <h2>2</h2>
               <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
+            </div>
+            <div class="cards">
+              <div class="row">
+                <div v-for="(item, key) in experienceContent" :key="key" class="content col-md-4 col-sm-12"
+                     data-aos="flip-left"
+                     data-aos-duration="1500"
+                     data-aos-once="true"
+                     :data-aos-delay="key*200"
+                >
+                  <div class="main">
+                    <ExperienceCard
+                      :content="item"
+                    />
+                    <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
+                      看解答
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -42,9 +61,9 @@
       </div> -->
     </div>
 
-    <div class="cards">
+    <!-- <div class="cards">
       <div class="container row m-auto p-0">
-        <div v-for="(item, key) in experienceContent" :key="key" class="content col-md-4 col-sm-12"
+        <div v-for="(item, key) in experienceContent" :key="key" class="content col-md-3 col-sm-12"
              data-aos="flip-left"
              data-aos-duration="1500"
              data-aos-once="true"
@@ -60,7 +79,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -105,7 +124,6 @@ export default Vue.extend({
   padding-bottom: 50px;
   .steps{
     .section{
-      margin-bottom: 50px;
       .item{
         padding: 10px;
         .info{
@@ -142,7 +160,7 @@ export default Vue.extend({
   }
 
   .cards{
-    .container{
+    .row{
       .content{
         display: flex;
         flex-direction: column;
