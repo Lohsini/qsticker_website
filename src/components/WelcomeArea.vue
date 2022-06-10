@@ -31,16 +31,17 @@
       <div class="icon">
         <i class="fas fa-caret-down" />
       </div>
-      <div class="txt m-auto" style="max-width: 50%;">
+      <div class="txt">
         學力科技的互動貼圖平台提供題目設計、建立班級以及設定測驗的功能，搭配APP快速蒐集用戶資料。
         並根據互動貼圖蒐集到的資料，使用AI分析模型進行學力診斷及預測，配合陳立集團「標靶治療」概念，建立出一套完整的學習系統。
       </div>
     </div>
 
     <div class="btn-area mt-5">
-      <button class="btn">
+      <img src="@/assets/mainTopic.png" alt="mainTopic">
+      <!-- <button class="btn">
         <a href="https://qsticker.github.io/#/register">立即加入<i class="fas fa-chevron-right" /></a>
-      </button>
+      </button> -->
     </div>
   </div>
 </template>
@@ -80,7 +81,6 @@ export default Vue.extend({
     .building{
       position: absolute;
       z-index: -1;
-      // top: 300px;
       bottom: -50px;
       right: 0;
       width: 30%;
@@ -122,36 +122,44 @@ export default Vue.extend({
         font-size: 1.3rem;
       }
     }
+    .txt{
+      margin: auto;
+      max-width: 50%;
+    }
   }
   .btn-area{
     margin: 30px;
     padding-bottom: 60px;
     border-bottom: rgb(216, 216, 216) dotted 5px;
-    button{
-      font-size: 1.5rem;
-      font-weight: 600;
-      background-color: rgb(144, 208, 248);
-      color: #fff;
-      border-radius: 50px;
-      padding: 5px 20px;
-      border: none;
-      transition: all 0.2s;
-      animation-name: show;
-      animation-duration: 1.2s;
-      animation-timing-function: ease-in-out;
-      a{
-        text-decoration: none;
-        color: #fff;
-        i{
-          margin-left: 10px;
-        }
-      }
-      &:hover{
-        background-color: #5bc0ff;
-        cursor: pointer;
-        transition: all 0.2s;
-      }
+    img{
+      width: 100%;
+      max-width: 500px;
     }
+    // button{
+    //   font-size: 1.5rem;
+    //   font-weight: 600;
+    //   background-color: rgb(144, 208, 248);
+    //   color: #fff;
+    //   border-radius: 50px;
+    //   padding: 5px 20px;
+    //   border: none;
+    //   transition: all 0.2s;
+    //   animation-name: show;
+    //   animation-duration: 1.2s;
+    //   animation-timing-function: ease-in-out;
+    //   a{
+    //     text-decoration: none;
+    //     color: #fff;
+    //     i{
+    //       margin-left: 10px;
+    //     }
+    //   }
+    //   &:hover{
+    //     background-color: #5bc0ff;
+    //     cursor: pointer;
+    //     transition: all 0.2s;
+    //   }
+    // }
   }
 }
 
@@ -175,6 +183,9 @@ export default Vue.extend({
     }
     .content{
       padding: 0 30px;
+      .txt{
+        max-width: 100%;
+      }
     }
   }
 }
