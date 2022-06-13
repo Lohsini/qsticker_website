@@ -78,7 +78,6 @@ export default Vue.extend({
 .qrCode{
   margin: 30px;
   padding-bottom: 60px;
-  border-bottom: rgb(216, 216, 216) dotted 5px;
   .image{
     margin: auto;
     height: 200px;

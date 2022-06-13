@@ -49,7 +49,7 @@ export default [
     title: '知識地圖',
     img: quizMapsPic,
     information: [
-      '設定相對應的題組和班級，進行時間、數量上的編排',
+      '使用AI分析模型進行學力診斷及預測，建立成效圖表',
     ],
     items: [
     ],
@@ -58,7 +58,7 @@ export default [
     title: '分析報告',
     img: analysisPic,
     information: [
-      '設定相對應的題組和班級，進行時間、數量上的編排',
+      '完成測驗後將依據測驗結果提供相應分析報告',
     ],
     items: [
     ],
@@ -67,7 +67,7 @@ export default [
     title: '影片複習',
     img: viedoPic,
     information: [
-      '設定相對應的題組和班級，進行時間、數量上的編排',
+      '經由影片加深學習印象，可多次複習',
     ],
     items: [
     ],
