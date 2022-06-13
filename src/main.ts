@@ -4,6 +4,7 @@ import animated from 'animate.css';
 import VueClipboard from 'vue-clipboard2';
 import vmodal from 'vue-js-modal';
 import { Route } from 'vue-router';
+import emailjs from 'emailjs-com';
 import App from './App.vue';
 import router from './router';
 import store from './store';

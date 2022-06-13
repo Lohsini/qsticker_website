@@ -13,7 +13,7 @@
            data-aos-once="true"
       >
         <h2>取得最新消息</h2>
-        <input type="email" placeholder="請填寫E-mail">
+        <input v-model="userEmail" type="email" placeholder="請填寫E-mail">
         <button class="btn" @click="submit">
           送出
         </button>
@@ -24,12 +24,27 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import emailjs from 'emailjs-com';
 
 export default Vue.extend({
+  data() {
+    return {
+      userEmail: '',
+    };
+  },
   methods: {
     submit() {
-      // eslint-disable-next-line no-alert
-      window.alert('尚未開放');
+      const templateParams = {
+        client_email: this.userEmail,
+      };
+      emailjs.send('service_plife5c', 'template_ohbm8mh', templateParams, 'dvIGl74P-za-4_hz1')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          // eslint-disable-next-line no-alert
+          alert(`已寄送相關資料至${this.userEmail}`);
+        }, (error) => {
+          console.log('FAILED...', error);
+        });
     },
   },
 });
