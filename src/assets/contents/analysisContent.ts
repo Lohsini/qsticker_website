@@ -21,10 +21,10 @@ export default [
     ],
   },
   {
-    title: '全班作答燈號圖',
+    title: '全班作答預測燈號圖',
     img: lightPic,
     information: [
-      '查看學生在各個題組中每次的作答狀況',
+      '查看學生作答狀況 & 未作答題組成績預測(AI模型分析)',
     ],
     items: [
       '橫軸 : 題組 & 縱軸 : 學生',

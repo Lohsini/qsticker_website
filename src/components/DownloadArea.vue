@@ -5,27 +5,52 @@
         APP下載區
       </h1>
       <p class="m-0">
-        QRcode
+        Android / iOS
       </p>
-      <div class="container row m-auto p-0">
-        <div class="col-md-6 col-sm-12">
-          <div class="image">
-            <img :src="androidQrcode" alt="androidQrcode">
+      <div class="container">
+        <div v-for="(content, key) in downloadContent" :key="key" class="content col-md-3 col-sm-12">
+          <div class="pic"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-once="true"
+          >
+            <img :src="content.img" :alt="content.img">
           </div>
           <br>
-          <button class="bt" disabled>
-            Android 下載
-          </button>
+          <div class="txt">
+            <h2>{{ content.title }}</h2>
+            <p v-for="(info, i) in content.information" :key="i">
+              {{ info }}
+            </p>
+            <ul>
+              <li v-for="(item, k) in content.items" :key="k">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="image">
-            <img :src="iosQrcode" alt="iosQrcode">
+      </div>
+      <div class="qrCode">
+        <div class="container row m-auto p-0">
+          <div class="col-md-6 col-sm-12">
+            <div class="image">
+              <img :src="androidQrcode" alt="androidQrcode">
+            </div>
+            <br>
+            <button class="bt" disabled>
+              Android 下載
+            </button>
           </div>
-          <br>
-          <button class="bt" disabled>
-            iOS 下載
-          </button>
-          <br>
+          <div class="col-md-6 col-sm-12">
+            <div class="image">
+              <img :src="iosQrcode" alt="iosQrcode">
+            </div>
+            <br>
+            <button class="bt" disabled>
+              iOS 下載
+            </button>
+            <br>
+          </div>
         </div>
       </div>
     </div>
@@ -34,6 +59,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import downloadContent from '@/assets/contents/downloadContent';
 import androidQrcode from '@/assets/androidQrcode.png';
 import iosQrcode from '@/assets/iosQrcode.png';
 
@@ -42,13 +68,14 @@ export default Vue.extend({
     return {
       androidQrcode,
       iosQrcode,
+      downloadContent,
     };
   },
 });
 </script>
 
 <style scoped lang="scss">
-.download-area{
+.qrCode{
   margin: 30px;
   padding-bottom: 60px;
   border-bottom: rgb(216, 216, 216) dotted 5px;
@@ -75,6 +102,80 @@ export default Vue.extend({
       margin: 5px 30px;
       border: none;
       transition: all 0.2s;
+  }
+}
+.download-area{
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .content{
+      padding-top: 30px;
+      .pic{
+        border-radius: 2px;
+        height: 300px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 5px;
+        }
+      }
+      .txt{
+        border-radius: 2px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        h2{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        p{
+          font-weight: 600;
+          //text-align: justify;
+        }
+        ul{
+          //padding: 4rem;
+          li{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px){
+  .download-area {
+    p{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .container {
+      margin: 2%;
+      .content+.content{
+        border-top: solid 1px #aaa;
+      }
+      .txt{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .download-area {
+    .container {
+      flex-direction: row;
+      margin-top: 10px;
+      width: auto;
+      .content+.content{
+        border-top: solid 1px #aaa;
+      }
+      .pic{
+        margin-top: 0px;
+      }
+    }
   }
 }
 </style>
