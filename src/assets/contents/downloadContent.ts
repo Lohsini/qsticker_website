@@ -1,6 +1,6 @@
-import mainPagePic from '@/assets/appAreaPic/main_page.png';
-import quizPic from '@/assets/appAreaPic/quiz.png';
-import analysisPic from '@/assets/appAreaPic/analysis.png';
+import mainPagePic from '@/assets/appAreaPic/main_page.jpg';
+import quizPic from '@/assets/appAreaPic/quiz.jpg';
+import analysisPic from '@/assets/appAreaPic/analysis.jpg';
 
 export default [
   {
