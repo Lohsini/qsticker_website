@@ -8,7 +8,7 @@
         Android / iOS
       </p>
       <div class="container">
-        <div v-for="(content, key) in downloadContent" :key="key" class="content col-md-3 col-sm-12">
+        <div v-for="(content, key) in downloadContent" :key="key" class="content col-md-4 col-sm-12">
           <div class="pic"
                data-aos="fade-up"
                data-aos-duration="1000"
