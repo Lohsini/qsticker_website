@@ -9,7 +9,7 @@
     <div class="steps">
       <div class="section">
         <div class="container row m-auto p-0">
-          <div class="item col-md-3 col-sm-12">
+          <div class="item col-md-6 col-sm-12">
             <div class="info">
               <h2>1</h2>
               <p>
@@ -22,14 +22,14 @@
               <img :src="QRCode" alt="QRCode">
             </div>
           </div>
-          <div class="item col-md-9 col-sm-12">
-            <div class="info col-md-4 col-sm-12">
+          <div class="item col-md-6 col-sm-12">
+            <div class="info">
               <h2>2</h2>
-              <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
+              <p>於對話框輸入代碼後即可開始做題</p>
             </div>
             <div class="cards">
               <div class="row">
-                <div v-for="(item, key) in experienceContent" :key="key" class="content col-md-4 col-sm-12"
+                <div v-for="(item, key) in experienceContent" :key="key" class="content"
                      data-aos="flip-left"
                      data-aos-duration="1500"
                      data-aos-once="true"
@@ -39,9 +39,9 @@
                     <ExperienceCard
                       :content="item"
                     />
-                    <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
+                    <!-- <button class="btn" @click.prevent="openAnswerModal(item.answerPic)">
                       看解答
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -49,16 +49,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="section mb-3">
-        <div class="container row m-auto p-0">
-          <div class="item col-md-4 col-sm-12">
-            <div class="info">
-              <h2>2</h2>
-              <p>選擇以下體驗題組<br>於對話框輸入代碼後即可開始做題</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <!-- <div class="cards">

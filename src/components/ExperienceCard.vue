@@ -15,9 +15,6 @@
           題組代碼：{{ content.shortId }}<i class="fas fa-check-circle text-success" />
         </span>
       </p>
-      <p class="txt">
-        題組簡介：<br>{{ content.txt }}
-      </p>
     </div>
   </div>
 </template>
@@ -84,7 +81,7 @@ export default Vue.extend({
       margin: 10px;
     }
     p{
-      text-align: left;
+      text-align: center;
       .copy{
         i{
           margin-left: 10px;
