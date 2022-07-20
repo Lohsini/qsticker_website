@@ -22,8 +22,8 @@
             </div>
             <div class="big-btn col-md-4 col-sm-12">
               <div class="content">
-                <a href="https://qsticker.github.io/#/login" @click.prevent="enter">
-                  <p><span>AITutor數據分析平台</span></p>
+                <a href="https://hsnlaitutor.kuromaree.com:33564/login">
+                  <p><span>數據分析平台</span></p>
                   <img :src="pic3" alt="pic3">
                 </a>
               </div>
