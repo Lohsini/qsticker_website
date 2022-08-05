@@ -31,7 +31,7 @@
     <div class="copyright">
       <div class="container">
         <p>
-          Copyright2021 © 學力科技
+          Copyright{{ year }} © 學力科技
         </p>
       </div>
     </div>
@@ -42,6 +42,11 @@
 import Vue from 'vue';
 
 export default Vue.extend({
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    };
+  },
   methods: {
   },
 });
