@@ -18,13 +18,13 @@
           <div class="icon">
             <i class="fas fa-envelope" />
           </div>
-          <p>lohi3152@gmail.com</p>
+          <p>qsticker.service@gmail.com</p>
         </div>
         <div class="phone">
           <div class="icon">
             <i class="fas fa-phone" />
           </div>
-          <p>(03) 657-3989</p>
+          <p>0986-123-331(徐小姐)</p>
         </div>
       </div>
     </div>

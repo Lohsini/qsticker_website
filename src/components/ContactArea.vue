@@ -3,9 +3,9 @@
     <div class="container row">
       <div class="section txt col-md-4 col-sm-12">
         <h2>聯絡我們</h2>
-        <p>電話：(03) 657-3989</p>
-        <p>傳真：(03) 657-3889</p>
-        <p>地址：新竹縣竹北市縣政二路488號2樓</p>
+        <p>電話：0986-123-331(徐小姐)</p>
+        <!-- <p>傳真：(03) 657-3889</p> -->
+        <p>地址：新竹市育英里四維路89巷2之1號5樓之2</p>
       </div>
       <div class="section input-area col-md-8 col-sm-12"
            data-aos="zoom-in"
